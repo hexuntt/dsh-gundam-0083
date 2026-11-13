@@ -1,0 +1,16 @@
+GUNDAM 0083 HARNESS — notices
+=============================
+
+This is an unofficial, non-commercial fan project. It is not affiliated with,
+endorsed by, or sponsored by Sotsu, Sunrise, Bandai Namco, or DeepSeek.
+
+Mobile Suit Gundam and all related characters, mobile suits, emblems and
+marks are the property of their respective rights holders. The EFSF emblem,
+the hangar stills and the GP03D line art shipped with this plugin are fan-made
+or fan-derived assets used solely to present the plugin's interface. They are
+NOT covered by the MIT licence that applies to the source code, and they may
+not be sold, relicensed, or used in commercial products.
+
+No animation footage, soundtrack, official voice tracks, or scanned art books
+are included. All boot sound effects are synthesised locally with WebAudio at
+runtime. Any BGM the user loads stays on the user's own machine in IndexedDB.

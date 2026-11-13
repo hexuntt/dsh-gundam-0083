@@ -1,0 +1,62 @@
+{
+  "name": "dsh-gundam-0083",
+  "version": "4.0.0",
+  "type": "module",
+  "description": "U.C.0083 Dendrobium panoramic cockpit for DSH: hangar-door boot sequence, EFSF self-check, parallax canopy frame, three-section MFD deck and a cold dark theme.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "gundam",
+    "0083",
+    "cockpit",
+    "hud",
+    "theme",
+    "web-ui"
+  ],
+  "license": "MIT",
+  "author": "hexun",
+  "icon": "./icon.svg",
+  "homepage": "https://github.com/hexuntt/dsh-gundam-0083#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexuntt/dsh-gundam-0083.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hexuntt/dsh-gundam-0083/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1 <0.2.2-0 || >=0.2.2-rc.1 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible",
+        "0.2.2-rc.1": "compatible"
+      }
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}
